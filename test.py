@@ -64,13 +64,23 @@ mycursor = mydb.cursor()
 # mydb.commit()
 
 #Tutorial 7:
-sql1 = "SELECT * FROM students ORDER BY name"
-sql2 = "SELECT * FROM students ORDER BY age DESC"
+# sql1 = "SELECT * FROM students ORDER BY name"
+# sql2 = "SELECT * FROM students ORDER BY age DESC"
 
-mycursor.execute(sql2)
+# mycursor.execute(sql2)
 
-myresults = mycursor.fetchall()
+# myresults = mycursor.fetchall()
 
-for result in myresults:
-    print(result)
+# for result in myresults:
+#     print(result)
 
+#Tutorial 8:
+sql1 = "DELETE FROM students WHERE name = 'MIKE'"
+sql2 = "DELETE FROM students WHERE age = 22"
+sql3 = "CREATE TABLE duplicated_students (name VARCHAR(255), age INTEGER(10))"
+sql4 = "DROP TABLE IF EXISTS duplicated_students"
+
+mycursor.execute(sql4)
+
+
+mydb.commit()
