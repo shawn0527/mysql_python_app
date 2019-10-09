@@ -63,4 +63,14 @@ mycursor = mydb.cursor()
 
 # mydb.commit()
 
+#Tutorial 7:
+sql1 = "SELECT * FROM students ORDER BY name"
+sql2 = "SELECT * FROM students ORDER BY age DESC"
+
+mycursor.execute(sql2)
+
+myresults = mycursor.fetchall()
+
+for result in myresults:
+    print(result)
 
