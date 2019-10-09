@@ -49,3 +49,18 @@ mycursor = mydb.cursor()
 # for result in myresults:
 #     print(result)
 
+#Tutorial 6:
+# sql1 = "UPDATE students SET age = 25 WHERE name = 'Ross'"
+# sql2 = "SELECT * FROM students LIMIT 5"
+# sql3 = "SELECT * FROM students LIMIT 3 OFFSET 2"
+
+# mycursor.execute(sql3)
+
+# myresults = mycursor.fetchall()
+
+# for result in myresults:
+#     print(result)
+
+# mydb.commit()
+
+
